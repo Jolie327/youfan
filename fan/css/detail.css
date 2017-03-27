@@ -1,0 +1,382 @@
+@import "reset.css";
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.m {
+  margin: 0 auto;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.box .header {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  background: #323333;
+  border-bottom: 1px #4d3faa solid;
+  line-height: 44px;
+}
+.box .header .fan {
+  float: left;
+  width: 12px;
+  height: 22px;
+  background-position: -100px -50px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+.box .header .fan:hover {
+  background-position: -150px -50px;
+}
+.box .header .more {
+  float: right;
+  position: absolute;
+  right: 33px;
+  top: 10px;
+}
+.box .header .more a {
+  float: right;
+  margin-left: 40px;
+}
+.box .header .more .fen:hover {
+  background-position: -151px -150px;
+}
+.box .header .more .dai:hover {
+  background-position: -150px -101px;
+}
+.box .header .more .fen {
+  width: 21px;
+  height: 22px;
+  background-position: -101px -150px;
+}
+.box .header .more .dai {
+  width: 24px;
+  height: 23px;
+  background-position: -100px -101px;
+}
+.box .header h1 {
+  position: absolute;
+  left: 50%;
+  font-size: 16px;
+  line-height: 44px;
+  color: #FFF;
+  transform: translate(-60px 0);
+}
+.box .header a {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+}
+.box .he {
+  width: 100%;
+  height: 575px;
+  background: null;
+  margin-top: 60px;
+}
+.box .he .left {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 575px;
+  background: null;
+}
+.box .he .left .dabox {
+  width: 100%;
+  right: 3%;
+  position: relative;
+}
+.box .he .left .dabox img {
+  right: 0;
+  width: 60%;
+  height: 475px;
+  position: absolute;
+  display: none;
+}
+.box .he .left .dabox .now {
+  display: block;
+}
+.box .he .left .tubox {
+  width: 60%;
+  height: 78px;
+  background: null;
+  position: absolute;
+  bottom: 6px;
+  right: 3%;
+}
+.box .he .left .tubox li {
+  float: left;
+  width: 17%;
+  height: 78px;
+  background: null;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.box .he .left .tubox li img {
+  width: 100%;
+  height: 76px;
+  background: null;
+}
+.box .he .left .tubox .here {
+  border: 1px #858585 solid;
+}
+.box .he .right {
+  float: right;
+  width: 40%;
+  height: 575px;
+  background: null;
+}
+.box .he .right .top {
+  width: 100%;
+  height: 70px;
+  background: null;
+  border-bottom: 1px #dfdfdf solid;
+}
+.box .he .right .top h2 {
+  color: #323333;
+  font-weight: bold;
+  line-height: 32px;
+}
+.box .he .right .top p {
+  color: #4c4c4c;
+}
+.box .he .right .center {
+  padding-top: 20px;
+  width: 100%;
+  height: 89px;
+  background: null;
+  border-bottom: 1px #dfdfdf solid;
+}
+.box .he .right .center p {
+  line-height: 23px;
+  color: #a1a1a1;
+}
+.box .he .right .center p b {
+  color: #4c4c4c;
+  font-weight: bold;
+  background: url("../img/xiangqing/aa_03.png") no-repeat right;
+  padding-right: 39px;
+  margin-left: 3%;
+}
+.box .he .right .center p font {
+  background: url("../img/xiangqing/aa_07.png") no-repeat left;
+  padding-left: 18px;
+  margin-left: 3%;
+}
+.box .he .right .center p del {
+  margin-left: 3%;
+}
+.box .he .right .foot {
+  width: 100%;
+  height: 247px;
+  background: null;
+}
+.box .he .right .foot dl dt {
+  float: left;
+  margin-right: 4%;
+  color: #4c4c4c;
+}
+.box .he .right .foot dl dd {
+  float: left;
+}
+.box .he .right .foot .one {
+  margin-top: 6%;
+}
+.box .he .right .foot .one dt {
+  float: left;
+  line-height: 60px;
+}
+.box .he .right .foot .one dd img {
+  width: 59px;
+  height: 59px;
+  background: null;
+  border: 1px #7c797a solid;
+}
+.box .he .right .foot .two {
+  margin: 4% 0;
+}
+.box .he .right .foot .two .kuang {
+  width: 82px;
+  height: 23px;
+  background: null;
+  border: 1px #cecdce solid;
+  line-height: 23px;
+  padding-left: 7px;
+}
+.box .he .right .foot .two .kuang img {
+  float: right;
+  margin: 6px 4px 0 0;
+  cursor: pointer;
+}
+.box .he .right .foot .two ul {
+  display: none;
+  width: 91px;
+  background: #222222;
+  border-radius: 5px;
+}
+.box .he .right .foot .two ul li {
+  width: 85px;
+  height: 26px;
+  background: null;
+  line-height: 26px;
+  color: #fff;
+  padding-left: 8px;
+}
+.box .he .right .foot .two ul li:hover {
+  background: #555555;
+  color: #fae90b;
+}
+.box .he .right .foot .three {
+  line-height: 20px;
+}
+.box .he .right .foot .three a {
+  width: 20px;
+  height: 20px;
+  background: #888888;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  float: left;
+  border-radius: 3px;
+}
+.box .he .right .foot .three div {
+  float: left;
+  width: 30px;
+  height: 20px;
+  background: null;
+  text-align: center;
+  line-height: 20px;
+  color: #9a6680;
+}
+.box .he .right .foot .three font {
+  float: left;
+  margin-left: 15px;
+  color: #4c4c4c;
+}
+.box .he .right .btn {
+  width: 100%;
+}
+.box .he .right .btn .dai {
+  width: 30%;
+  height: 30%;
+  background: #ffffff;
+  border: 1px #e2e2e2 solid;
+  border-radius: 3px;
+}
+.box .he .right .btn .buy {
+  width: 30%;
+  height: 30%;
+  background: #323333;
+  color: #d5d5d5;
+  border: 1px #dedede solid;
+}
+.box .zi {
+  width: 100%;
+  height: 21px;
+  background: null;
+  margin-top: 20px;
+}
+.box .zi b {
+  float: left;
+  font-size: 14px;
+  color: #333333;
+  width: 24%;
+}
+.box .zi span {
+  width: 76%;
+  height: 1px;
+  background: #e3e3e3;
+  float: left;
+  margin-top: 11px;
+}
+.box .aa {
+  width: 100%;
+  height: 48px;
+  background: #f8f8f8;
+  margin-top: 20px;
+}
+.box .aa ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.box .aa ul li {
+  text-align: center;
+  flex: 1;
+  line-height: 48px;
+  color: #848585;
+}
+.box .zhong {
+  width: 686px;
+  margin: 0 auto;
+  text-align: center;
+}
+.box .zhong h2 {
+  font-size: 22px;
+  color: #333337;
+  font-weight: bold;
+  line-height: 85px;
+  margin-top: 67px;
+}
+.box .zhong img {
+  margin-bottom: 40px;
+}
+.box table {
+  width: 80%;
+  height: 237px;
+  background: null;
+  border: 1px #e0e0e0 solid;
+  border-bottom: none;
+  margin: 0 auto;
+}
+.box table tr:first-child {
+  background: #333333;
+  border-bottom: 1px #5c5c5c solid;
+}
+.box table tr:first-child td {
+  border-right: none;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+.box table tr {
+  height: 46px;
+  border-bottom: 1px #e0e0e0 solid;
+}
+.box table td {
+  border-right: 1px #d8d8d8 solid;
+  text-align: center;
+  font-size: 15px;
+}
+.box .bothe {
+  width: 100%;
+  height: 328px;
+  position: relative;
+}
+.box .bothe .tentu {
+  width: 100%;
+  height: 272px;
+  text-align: center;
+}
+.box .bothe .tentu img {
+  width: 17%;
+  height: 272px;
+  margin: 0 1%;
+}
+.box .bothe a {
+  position: absolute;
+  width: 36px;
+  height: 60px;
+  background: #aaa8a9;
+  font-size: 26px;
+}
+.box .bothe .left {
+  left: 0;
+}
+.box .bothe .right {
+  right: 0;
+}

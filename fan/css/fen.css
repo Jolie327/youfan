@@ -1,0 +1,225 @@
+@import "reset.css";
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.m {
+  margin: 0 auto;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.box .header {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  background: #323333;
+  border-bottom: 1px #4d3faa solid;
+  line-height: 44px;
+}
+.box .header .dao {
+  float: left;
+  width: 22px;
+  height: 21px;
+  background-position: 0 0;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+.box .header .dao:hover {
+  background-position: -50px 0;
+}
+.box .header .more {
+  float: right;
+  position: absolute;
+  right: 33px;
+  top: 10px;
+}
+.box .header .more a {
+  float: right;
+  margin-left: 40px;
+}
+.box .header .more .sou:hover {
+  background-position: -50px -100px;
+}
+.box .header .more .dai:hover {
+  background-position: -150px -101px;
+}
+.box .header .more .sou {
+  width: 22px;
+  height: 22px;
+  background-position: 0px -100px;
+}
+.box .header .more .dai {
+  width: 24px;
+  height: 23px;
+  background-position: -100px -101px;
+}
+.box .header h1 {
+  position: absolute;
+  left: 50%;
+  font-size: 16px;
+  line-height: 44px;
+  color: #FFF;
+  transform: translate(-60px 0);
+}
+.box .header a {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+}
+.box ul {
+  width: 135px;
+  height: 328px;
+  background: #1c2427;
+  position: absolute;
+  left: 0;
+  z-index: 999999999;
+  top: 42px;
+  display: none;
+}
+.box ul li {
+  font-size: 18px;
+  text-align: center;
+  height: 41px;
+  line-height: 41px;
+}
+.box ul li a {
+  color: #fff;
+}
+.box ul li:hover {
+  background: #374950;
+}
+.box ul li:hover a {
+  color: red;
+}
+.box .main {
+  margin-top: 45px;
+}
+.box .main ul {
+  width: 100%;
+  height: 55px;
+  border-bottom: 3px #a5aaaa solid;
+}
+.box .main ul li {
+  width: 14%;
+  float: left;
+  height: 53px;
+  line-height: 53px;
+  font-size: 16px;
+  color: #323333;
+}
+.box .main ul li a {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  width: 124px;
+  margin: 0 auto;
+}
+.box .main ul li a:hover {
+  color: #fae90b;
+  border-bottom: 6px #323333 solid;
+}
+.box .main .nv,
+.box .main .nan,
+.box .main .sport,
+.box .main .shoe,
+.box .main .bag,
+.box .main .jewelry,
+.box .main .brand {
+  display: none;
+  width: 100%;
+  margin-top: 3px;
+}
+.box .main .nv .he,
+.box .main .nan .he,
+.box .main .sport .he,
+.box .main .shoe .he,
+.box .main .bag .he,
+.box .main .jewelry .he,
+.box .main .brand .he {
+  width: 20%;
+  margin: 20px 2.5%;
+  text-align: center;
+  float: left;
+}
+.box .main .nv .he .one,
+.box .main .nan .he .one,
+.box .main .sport .he .one,
+.box .main .shoe .he .one,
+.box .main .bag .he .one,
+.box .main .jewelry .he .one,
+.box .main .brand .he .one {
+  width: 297px;
+  height: 306px;
+  background: null;
+  overflow: hidden;
+}
+.box .main .nv .he .one img,
+.box .main .nan .he .one img,
+.box .main .sport .he .one img,
+.box .main .shoe .he .one img,
+.box .main .bag .he .one img,
+.box .main .jewelry .he .one img,
+.box .main .brand .he .one img {
+  width: 297px;
+  height: 306px;
+  background: null;
+}
+.box .main .nv .he .one img:hover,
+.box .main .nan .he .one img:hover,
+.box .main .sport .he .one img:hover,
+.box .main .shoe .he .one img:hover,
+.box .main .bag .he .one img:hover,
+.box .main .jewelry .he .one img:hover,
+.box .main .brand .he .one img:hover {
+  transform: scale(1.5);
+}
+.box .main .nv .he p,
+.box .main .nan .he p,
+.box .main .sport .he p,
+.box .main .shoe .he p,
+.box .main .bag .he p,
+.box .main .jewelry .he p,
+.box .main .brand .he p {
+  text-align: center;
+}
+.box .main .nv .he .p1,
+.box .main .nan .he .p1,
+.box .main .sport .he .p1,
+.box .main .shoe .he .p1,
+.box .main .bag .he .p1,
+.box .main .jewelry .he .p1,
+.box .main .brand .he .p1 {
+  line-height: 33px;
+  border-bottom: 1px #d0ccca dashed;
+  color: #333333;
+  font-size: 15px;
+}
+.box .main .nv .he .p2 a,
+.box .main .nan .he .p2 a,
+.box .main .sport .he .p2 a,
+.box .main .shoe .he .p2 a,
+.box .main .bag .he .p2 a,
+.box .main .jewelry .he .p2 a,
+.box .main .brand .he .p2 a {
+  margin: 0 15px;
+}
+.box .main .nv .he .p2 .a1,
+.box .main .nan .he .p2 .a1,
+.box .main .sport .he .p2 .a1,
+.box .main .shoe .he .p2 .a1,
+.box .main .bag .he .p2 .a1,
+.box .main .jewelry .he .p2 .a1,
+.box .main .brand .he .p2 .a1 {
+  background: url("../img/fenlei/kk_03.png") no-repeat left;
+  padding-left: 19px;
+  line-height: 28px;
+}
+.box .main .here {
+  display: block;
+}

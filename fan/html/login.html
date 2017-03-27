@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css"/>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/messages_zh.js"></script>
+    <style>
+        label.error{color:red;font-size:12px;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <h1><a href="#"><img src="../img/aa_03.png" alt=""/></a></h1>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="k1"></div>
+                <dl>
+                    <dt><img src="../img/denglu/denglu-pic01.png" alt=""/></dt>
+                    <dd><font class="lf">有范</font><font class="rt">是一种生活态度</font></dd>
+                </dl>
+            </div>
+            <div class="right">
+                <div class="all">
+                    <form action="" name="form" class="cmxform" id="commentForm" method="get">
+                        <div class="title">登陆有范</div>
+                        <div class="user ss1">
+                            <span class="kk"></span>
+                            <input type="text" placeholder="用户名/手机号" name="username" required minlength="2"/>
+                        </div>
+                        <div class="psd ss1">
+                            <span class="kk"></span>
+                            <input type="text" placeholder="密码" class="ins" required minlength="6"/>
+                        </div>
+                        <input type="button" value="登陆" class="log"/>
+                    </form>
+                    <div class="ss2">
+                        <div class="left-one"><input type="checkbox" id="in"/><label for="in">记住登陆状态</label></div>
+                        <div class="right-one"><a href="#" class="a1">忘记密码？</a>|<a href="#" class="a2">立即注册</a></div>
+                    </div>
+                    <div class="san">
+                        <font>第三方登录方式：</font>
+                        <a href="http://weibo.com/login.php" class="ss3 ss"></a>
+                        <a href="http://web2.qq.com/" class="ss2 ss"></a>
+                        <a href="https://wx.qq.com/" class="ss4 ss"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $().ready(function() {
+        $("#commentForm").validate({
+//            onsubmit:true,
+//            onkeyup:false,
+            rules: {
+                username: {
+                    required: true,
+                    rangelength:[2,5]
+                },
+                password: {
+                    required: true,
+                    rangelength:[6,10]
+                }
+            },
+            messages: {
+                username: {
+                    required: "请输入用户名",
+                    rangelength: "用户名2-5位"
+                },
+                password: {
+                    required: "请输入密码",
+                    rangelength: "密码长度6-10"
+                }
+            }
+        });
+    });
+</script>
+</html>

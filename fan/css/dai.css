@@ -1,0 +1,292 @@
+@import "reset.css";
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.m {
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 44px;
+  background: #323333;
+  border-bottom: 1px #4d3faa solid;
+  line-height: 44px;
+  position: relative;
+}
+.header .fan {
+  float: left;
+  width: 12px;
+  height: 22px;
+  background-position: -100px -50px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+.header .fan:hover {
+  background-position: -150px -50px;
+}
+.header a {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+}
+.header h1 {
+  position: absolute;
+  left: 50%;
+  font-size: 16px;
+  line-height: 44px;
+  color: #FFF;
+  transform: translate(100px 0);
+}
+.header .more {
+  float: right;
+  position: absolute;
+  right: 33px;
+  top: 10px;
+}
+.header .more a {
+  float: right;
+  margin-left: 40px;
+}
+.header .more .sao:hover {
+  background-position: -151px 0;
+}
+.header .more .sou:hover {
+  background-position: -50px -100px;
+}
+.header .more .fen:hover {
+  background-position: -151px -150px;
+}
+.header .more .sao {
+  width: 23px;
+  height: 21px;
+  background-position: -101px 0;
+}
+.header .more .sou {
+  width: 22px;
+  height: 22px;
+  background-position: 0px -100px;
+}
+.header .more .fen {
+  width: 21px;
+  height: 22px;
+  background-position: -101px -150px;
+}
+.banner {
+  width: 100%;
+  height: 70px;
+}
+.banner h1 {
+  float: left;
+  margin-top: 20px;
+}
+.banner .jin {
+  float: right;
+  margin-top: 20px;
+}
+table {
+  border: 1px #968d88 solid;
+  border-bottom: none;
+  width: 100%;
+  text-align: center;
+}
+table .tou {
+  height: 39px;
+  width: 100%;
+  background: #333333;
+  font-size: 15px;
+  color: #fff;
+}
+table .tou td {
+  height: 39px;
+  border-bottom: 1px #877f7c solid;
+}
+table tr {
+  width: 100%;
+}
+table .two {
+  height: 99px;
+}
+table .two td {
+  border-right: 1px #cecece solid;
+}
+table .two td:first-child {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 99px;
+  position: relative;
+}
+table .two td:first-child input {
+  position: absolute;
+  width: 10%;
+  float: left;
+  top: 50%;
+  transform: translate(0, -15px);
+}
+table .two td:first-child dl {
+  position: absolute;
+  left: 10%;
+  margin-top: 9px;
+}
+table .two td:first-child dl dt {
+  float: left;
+}
+table .two td:first-child dl dd {
+  float: left;
+}
+table .two td:first-child dl dd h2 {
+  font-size: 14px;
+}
+table .two td:first-child dl dd p {
+  float: left;
+  color: #898987;
+}
+table td {
+  border-bottom: 1px #c9c7c8 solid;
+}
+table td:first-child {
+  width: 30%;
+}
+table td:nth-child(2) {
+  width: 10%;
+}
+table td:nth-child(3) {
+  width: 10%;
+  position: relative;
+}
+table td:nth-child(3) .bao {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-30px, -10px);
+}
+table td:nth-child(3) a {
+  width: 10px;
+  height: 10px;
+  line-height: 8px;
+  text-align: center;
+  float: left;
+  border: 1px #e3e3e3 solid;
+  margin-top: 4px;
+}
+table td:nth-child(3) .num {
+  width: 15px;
+  float: left;
+  padding: 0 3px;
+  border: 1px #e3e3e3 solid;
+  margin: 0 6px;
+}
+table td:nth-child(4) {
+  width: 10%;
+}
+table td:nth-child(5) {
+  width: 15%;
+}
+table td:nth-child(6) {
+  width: 25%;
+}
+.zong {
+  width: 100%;
+  height: 49px;
+  background: #f2f2f2;
+  border: 1px #c2c1bf solid;
+  margin-top: 14px;
+  line-height: 49px;
+}
+.zong .ca {
+  float: left;
+  font-size: 14px;
+  color: #716d6c;
+  margin: 0 15px 0 20px;
+}
+.zong .ca input {
+  margin-right: 13px;
+}
+.zong a {
+  float: left;
+  margin: 0 20px;
+}
+.zong .st {
+  float: right;
+  font-size: 14px;
+  color: #716d6c;
+  margin-right: 6px;
+}
+.zong .st b {
+  font-size: 16px;
+  color: #c31341;
+}
+.btnall {
+  margin: 12px 0;
+}
+.btnall .gg {
+  float: left;
+  width: 80px;
+  height: 34px;
+  background: #f0eff5;
+  border: 1px #dcdcde solid;
+  border-radius: 5px;
+}
+.btnall .gg b {
+  background: url("../img/gouwuche/bb_07.png") no-repeat left;
+  padding-left: 8px;
+}
+.btnall .js {
+  float: right;
+  width: 154px;
+  height: 36px;
+  background: #c31341;
+  border: 1px #d1d1cf solid;
+  line-height: 36px;
+  text-align: center;
+  font-size: 17px;
+  color: #fffffd;
+}
+.btnall .js b {
+  background: url("../img/gouwuche/bb_03.png") no-repeat right;
+  padding-right: 19px;
+}
+.cou {
+  width: 100%;
+  height: 37px;
+  background: #f2f2f2;
+  border: 1px #999798 solid;
+  line-height: 37px;
+}
+.cou p {
+  float: left;
+  font-size: 13px;
+  color: #666666;
+}
+.cou p a {
+  width: 16px;
+  height: 16px;
+  background: #313332;
+  float: left;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  margin: 11px 6px 0 14px;
+}
+.cou button {
+  float: right;
+  width: 25px;
+  height: 16px;
+  background: #ffffff;
+  border: 1px #cccccc solid;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 8px;
+  margin: 10px 6px 0 0;
+}
+.tuall {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.tuall img {
+  flex: 1;
+}

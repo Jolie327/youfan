@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>购物袋</title>
+    <link rel="stylesheet" href="../css/dai.css"/>
+    <script src="../js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="header">
+        <a href="#" class="fan ss"></a>
+        <h1>购物袋</h1>
+        <div class="more">
+            <a href="http://localhost:63342/fan/html/fen.html"  class="fen"></a>
+            <a href="http://localhost:63342/fan/html/sou.html#"  class="sou"></a>
+            <a href="#"  class="sao"></a>
+        </div>
+    </div>
+    <div class="banner">
+        <h1><a href="#"><img src="../img/gouwuche/img_03.jpg" alt=""/></a></h1>
+        <img src="../img/gouwuche/aa_03.png" alt="" class="jin"/>
+    </div>
+    <table>
+        <tr class="tou">
+            <td>商品信息</td>
+            <td>单价（元）</td>
+            <td>数量</td>
+            <td>返范票</td>
+            <td>小计（元）</td>
+            <td>操作</td>
+        </tr>
+        <tr class="two">
+            <td>
+                <input type="checkbox"/>
+                <dl>
+                    <dt><img src="../img/gouwuche/img_07.jpg" alt=""/></dt>
+                    <dd>
+                        <h2>Life After Life袋鼠兜纯色七分袖衬衫</h2>
+                        <p>颜色：黑色<br/>尺码：XXL</p>
+                    </dd>
+                </dl>
+            </td>
+            <td>￥299</td>
+            <td>
+                <div class="bao">
+                    <a href="#" class="jian">-</a>
+                    <div class="num">1</div>
+                    <a href="#" class="add">+</a>
+                </div>
+            </td>
+            <td>0</td>
+            <td class="total">￥<font>299</font></td>
+            <td>
+                <button>删除</button>
+                <button>移入收藏</button>
+            </td>
+        </tr>
+        <tr class="two">
+            <td>
+                <input type="checkbox"/>
+                <dl>
+                    <dt><img src="../img/gouwuche/img_10.jpg" alt=""/></dt>
+                    <dd>
+                        <h2>Life After Life袋鼠兜纯色七分袖衬衫</h2>
+                        <p>颜色：黑色<br/>尺码：XXL</p>
+                    </dd>
+                </dl>
+            </td>
+            <td>￥299</td>
+            <td>
+                <div class="bao">
+                    <a href="#" class="jian">-</a>
+                    <div class="num">1</div>
+                    <a href="#" class="add">+</a>
+                </div>
+            </td>
+            <td>0</td>
+            <td class="total">￥<font>299</font></td>
+            <td>
+                <button>删除</button>
+                <button>移入收藏</button>
+            </td>
+        </tr>
+        <tr class="two">
+            <td>
+                <input type="checkbox"/>
+                <dl>
+                    <dt><img src="../img/gouwuche/img_12.jpg" alt=""/></dt>
+                    <dd>
+                        <h2>Life After Life袋鼠兜纯色七分袖衬衫</h2>
+                        <p>颜色：黑色<br/>尺码：XXL</p>
+                    </dd>
+                </dl>
+            </td>
+            <td>￥299</td>
+            <td>
+                <div class="bao">
+                    <a href="#" class="jian">-</a>
+                    <div class="num">1</div>
+                    <a href="#" class="add">+</a>
+                </div>
+            </td>
+            <td>0</td>
+            <td class="total">￥<font>299</font></td>
+            <td>
+                <button>删除</button>
+                <button>移入收藏</button>
+            </td>
+        </tr>
+    </table>
+    <div class="zong">
+        <p class="ca"><label for="aa"><input type="checkbox" id="aa"/>全选</label></p>
+        <a href="#">批量删除</a>
+        <a href="#">批量移入收藏夹</a>
+        <p class="st">商品总价：<b>￥<font>999.00</font></b>元</p>
+    </div>
+    <div class="btnall">
+        <button class="gg"><b>再逛逛</b></button>
+        <button class="js"><b>去结算</b></button>
+    </div>
+    <div class="cou">
+        <p><a href="#">-</a>凑单商品</p>
+        <button><img src="../img/gouwuche/cc.png" alt=""/></button>
+        <button><img src="../img/gouwuche/bb_07.png" alt=""/></button>
+    </div>
+    <div class="tuall">
+        <img src="../img/gouwuche/img_18.jpg" alt=""/>
+        <img src="../img/gouwuche/img_15.jpg" alt=""/>
+        <img src="../img/gouwuche/img_21.jpg" alt=""/>
+        <img src="../img/gouwuche/img_23.jpg" alt=""/>
+        <img src="../img/gouwuche/img_25.jpg" alt=""/>
+        <img src="../img/gouwuche/img_27.jpg" alt=""/>
+    </div>
+</div>
+<script>
+    $(".add").click(function(){
+        var $num=$(".num").html();
+        var $toa=$(".total font").html();
+        $num++;
+        $(".num").html($num);
+        $(".total font").html($num*$toa);
+    })
+    $(".jian").click(function(){
+        var $num=$(".num").html();
+        var $toa=$(".total font").html();
+        $num--;
+        $num=$num<0?0:$num;
+        $(".num").html($num);
+        $(".total font").html($num*$toa);
+    })
+    $("#aa").click(function(){
+        var $in=$("table input").length;
+        var $now=$("#aa").prop("checked");
+        if($now==false){
+            for(var i=0;i<$in;i++){
+                var $aa=$("table input").prop("checked");
+                if($aa==true){
+                    $("table input").prop("checked","false");
+                }
+            }
+        }else{
+            for(var i=0;i<$in;i++){
+                var $aa=$("table input").prop("checked");
+                if($aa==false){
+                    $("table input").prop("checked","true");
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>

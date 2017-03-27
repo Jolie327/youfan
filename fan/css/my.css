@@ -1,0 +1,241 @@
+@import "reset.css";
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.m {
+  margin: 0 auto;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.box .header {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  background: #323333;
+  border-bottom: 1px #4d3faa solid;
+  line-height: 44px;
+}
+.box .header .fan {
+  float: left;
+  width: 12px;
+  height: 22px;
+  background-position: -100px -50px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+.box .header .fan:hover {
+  background-position: -150px -50px;
+}
+.box .header .more {
+  float: right;
+  position: absolute;
+  right: 33px;
+  top: 10px;
+}
+.box .header .more a {
+  float: right;
+  margin-left: 40px;
+}
+.box .header .more .xin:hover {
+  background-position: -50px -50px;
+}
+.box .header .more .dai:hover {
+  background-position: -150px -101px;
+}
+.box .header .more .xin {
+  width: 25px;
+  height: 23px;
+  background-position: 0px -50px;
+}
+.box .header .more .dai {
+  width: 24px;
+  height: 23px;
+  background-position: -100px -101px;
+}
+.box .header h1 {
+  position: absolute;
+  left: 50%;
+  font-size: 16px;
+  line-height: 44px;
+  color: #FFF;
+  transform: translate(100px 0);
+}
+.box .header a {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+}
+.box .main {
+  width: 100%;
+  margin-top: 45px;
+  position: relative;
+  border-bottom: 7px #dbdbdc solid;
+}
+.box .main .banner img {
+  width: 100%;
+}
+.box .main .info {
+  width: 233px;
+  height: 37px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 15px;
+}
+.box .main .info ul li {
+  float: left;
+}
+.box .main .info .ii {
+  margin: 0 30px;
+}
+.box .detail {
+  width: 100%;
+}
+.box .detail .ding {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px #efefef solid ;
+}
+.box .detail .ding a {
+  margin: 0 17px;
+  font-size: 15px;
+  line-height: 60px;
+  color: #333333;
+}
+.box .detail .ding .wo {
+  float: left;
+}
+.box .detail .ding .quan {
+  float: right;
+}
+.box .detail .ding .quan span {
+  width: 9px;
+  height: 16px;
+  float: right;
+  margin-left: 22px;
+  background: url("../img/icon.png") no-repeat -150px -450px;
+  margin-top: 20px;
+}
+.box .detail .ding:hover {
+  background: #eeeeee;
+}
+.box .detail .ding:hover a {
+  color: red;
+}
+.box .detail .all {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px #efefef solid ;
+  display: flex;
+  flex-direction: row;
+}
+.box .detail .all dl {
+  float: left;
+  margin: 10px 54px 0 54px;
+  flex: 1;
+}
+.box .detail .all dl dt {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  margin-bottom: 8px;
+}
+.box .detail .all dl dd {
+  font-size: 15px;
+  color: #333333;
+}
+.box .detail .all dl .bu {
+  width: 35px;
+  height: 30px;
+  background-position: 0 -650px;
+}
+.box .detail .all dl .fu {
+  width: 31px;
+  height: 29px;
+  background-position: -100px -650px;
+}
+.box .detail .all dl .fa {
+  width: 32px;
+  height: 29px;
+  background-position: 0 -700px;
+}
+.box .detail .all dl .shou {
+  width: 32px;
+  height: 29px;
+  background-position: -100px -700px;
+}
+.box .detail .all dl .ping {
+  width: 29px;
+  height: 29px;
+  background-position: 0 -750px;
+}
+.box .detail .all dl .hou {
+  width: 28px;
+  height: 27px;
+  background-position: -100px -750px;
+}
+.box .detail .all dl:hover dd {
+  color: #fae90b;
+}
+.box .detail .all dl:hover dt {
+  transition: background-position 0.3s linear;
+}
+.box .detail .all dl:hover .bu {
+  width: 35px;
+  height: 30px;
+  background-position: -50px -650px;
+}
+.box .detail .all dl:hover .fu {
+  width: 31px;
+  height: 29px;
+  background-position: -150px -650px;
+}
+.box .detail .all dl:hover .fa {
+  width: 32px;
+  height: 29px;
+  background-position: -50px -700px;
+}
+.box .detail .all dl:hover .shou {
+  width: 32px;
+  height: 29px;
+  background-position: -150px -700px;
+}
+.box .detail .all dl:hover .ping {
+  width: 29px;
+  height: 29px;
+  background-position: -50px -750px;
+}
+.box .detail .all dl:hover .hou {
+  width: 28px;
+  height: 27px;
+  background-position: -150px -750px;
+}
+.box .detail .ss {
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px #efefef solid ;
+  line-height: 55px;
+}
+.box .detail .ss .lf {
+  float: left;
+  font-size: 15px;
+  color: #333333;
+  margin-left: 20px;
+}
+.box .detail .ss .you {
+  float: right;
+  width: 9px;
+  height: 16px;
+  background: url("../img/icon.png") no-repeat -150px -450px;
+  margin: 20px 20px 0 0;
+}
+.box .detail .ss:hover {
+  background: #eeeeee;
+}

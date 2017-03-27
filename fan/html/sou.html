@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>搜索</title>
+    <link rel="stylesheet" href="../css/sou.css"/>
+    <script src="../js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="header">
+        <a href="#" class="fan ss"></a>
+        <div class="he">
+            <input type="text" placeholder="请输入您要查询天气的城市"/>
+            <a href="#"></a>
+        </div>
+    </div>
+    <div class="main">
+        <h1></h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    $(".he a").click(function(){
+        var $aa=$(".he input").val();
+        $.getJSON("http://wthrcdn.etouch.cn/weather_mini?city="+$aa,function(data){
+            $.each(data,function(a,i){
+                if(data.status==1002){
+                    $(".main h1").children().remove();
+                    $(".main h1").append("<font>暂时没有您所在地区的天气情况，我们会继续努力！</font>").css("color","red");
+                }else{
+                    $(".main h1").children().remove();
+                    $(".main h1").append("<font>"+$aa+"最近五天的天气情况</font>").css("color","red").css("font-weight","bolder");
+                    $(".main li").eq(0).html("日期");
+                    $(".main li").eq(1).html("风力");
+                    $(".main li").eq(2).html("风向");
+                    $(".main li").eq(3).html("高温");
+                    $(".main li").eq(4).html("低温");
+                    $(".main li").eq(5).html("天气类型");
+                    $.each(i.forecast,function(a,b){
+                        $(".main li").eq(0).append("<p>"+ b.date+"</p>");
+                        $(".main li").eq(1).append("<p>"+ b.fengli+"</p>");
+                        $(".main li").eq(2).append("<p>"+ b.fengxiang+"</p>");
+                        $(".main li").eq(3).append("<p>"+ b.high+"</p>");
+                        $(".main li").eq(4).append("<p>"+ b.low+"</p>");
+                        $(".main li").eq(5).append("<p>"+ b.type+"</p>");
+                    })
+                }
+            })
+        })
+    })
+</script>
+</html>
